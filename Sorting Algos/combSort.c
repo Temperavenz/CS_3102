@@ -12,6 +12,19 @@ int main(void) {
 }
 
 void combSort(int *arr, int size) {
+    int x, y, temp;
+    bool swapped;
+    for(x=size/1.3, swapped=1; x>0||swapped==1; x/=1.3) {
+        swapped=0;
+        for(y=0; y<size-x; ++y) {
+            if(arr[y]>arr[y+x]) {
+                temp=arr[y];
+                arr[y]=arr[y+x];
+                arr[y+x]=temp;
+                swapped=1;
+            }
+        }
+    }
 }
 
 void display(int *arr, int size) {

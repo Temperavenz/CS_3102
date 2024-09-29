@@ -12,6 +12,16 @@ int main(void) {
 }
 
 void shellSort(int *arr, int size) {
+    int x, y, z, temp;
+    for(x=size/2; x>0; x/=2) {
+        for(y=x; y<size; ++y) {
+            for(z=y; z>=x&&arr[z-x]>arr[z]; z-=x) {
+                temp=arr[z-x];
+                arr[z-x]=arr[z];
+                arr[z]=temp;
+            }
+        }
+    }
 }
 
 void display(int *arr, int size) {
