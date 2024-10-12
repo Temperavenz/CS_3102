@@ -14,6 +14,8 @@ typedef struct node {
     struct node *link;
 }*List;
 
+/*  ==================================================================================  */
+
 /********************************
 *   Part A Function Prototypes  *
 *********************************/
@@ -52,7 +54,7 @@ void lomutoPartition(int arr[], int low, int high);
 void quickSortHoare(int arr[], int low, int high);
 void hoarePartition(int arr[], int low, int high);
 
-void bucketSort(float arr[], int size);
+int *bucketSort(float arr[], int size);
 void insertSorted(List *buckets, float elem);
 
 void strandSort(int ipArr[], int ipSize, int opArr[], int *opSize);

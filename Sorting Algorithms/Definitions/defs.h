@@ -79,7 +79,7 @@ void hoarePartition(int arr[], int low, int high) {
     // Insert code here
 }
 
-void bucketSort(float arr[], int size) {
+int *bucketSort(float arr[], int size) {
     // Insert code here
 }
 void insertSorted(List *buckets, float elem) {
@@ -96,6 +96,15 @@ void strandMerge(int tempArr[], int tempSize, int sublist[], int subSize, int op
 // Display function definition
 void displayArr(int arr[], int size) {
     // Insert code here
+    int x;
+    printf("{");
+    for(x = 0; x < size; x++) {
+        printf("%d", arr[x]);
+        if(x < size - 1) {
+            printf(", ");
+        }
+    }
+    printf("}\n\n");
 }
 
 #endif
