@@ -60,7 +60,9 @@ void insertSorted(List *buckets, float elem);
 void strandSort(int ipArr[], int ipSize, int opArr[], int *opSize);
 void strandMerge(int tempArr[], int tempSize, int sublist[], int subSize, int opArr[]);
 
-// Display function prototype
+// Miscellaneous function prototypes
 void displayArr(int arr[], int size);
+bool checkDupsForInt(int arr[], int size);
+bool checkDupsForFlo(float arr[], int size);
 
 #endif

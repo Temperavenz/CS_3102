@@ -93,18 +93,38 @@ void strandMerge(int tempArr[], int tempSize, int sublist[], int subSize, int op
     // Insert code here
 }
 
-// Display function definition
+// Miscellaneous function definitions
 void displayArr(int arr[], int size) {
     // Insert code here
     int x;
-    printf("{");
+    printf("[");
     for(x = 0; x < size; x++) {
         printf("%d", arr[x]);
         if(x < size - 1) {
             printf(", ");
         }
     }
-    printf("}\n\n");
+    printf("]\n\n");
+}
+
+bool checkDupsForInt(int arr[], int size) {
+    // Insert code here
+    bool checker = false;
+    int x;
+    for(x = 0; x < size - 1 && checker == false; x++) {
+        checker = (arr[x] == arr[x + 1]) ? false : true;
+    }
+    return checker;
+}
+
+bool checkDupsForFlo(float arr[], int size) {
+    // Insert code here
+    bool checker = false;
+    int x;
+    for(x = 0; x < size - 1 && checker == false; x++) {
+        checker = (arr[x] == arr[x + 1]) ? false : true;
+    }
+    return checker;
 }
 
 #endif
